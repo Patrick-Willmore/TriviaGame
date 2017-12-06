@@ -1,7 +1,7 @@
-/* .side {
+.side {
     background-image: url('../images/festivus-2.jpg');
     background-repeat: repeat-y;
-} */
+}
 
 /* img.pole {
     /* background-image: url("../images/festivus-2.jpg"); */
@@ -24,6 +24,7 @@
     background-color: green;
     font-weight: bold;
     text-align: center;
+    color: black;
 }
 
 .side {
