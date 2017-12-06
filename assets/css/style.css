@@ -1,7 +1,7 @@
-.side {
+/* .side {
     background-image: url('../images/festivus-2.jpg');
     background-repeat: repeat-y;
-}
+} */
 
 /* img.pole {
     /* background-image: url("../images/festivus-2.jpg"); */
@@ -30,4 +30,8 @@
 .side {
     margin: none;
     padding: 0px;
+}
+
+.kramer {
+    padding-bottom: 10px;
 }
