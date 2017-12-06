@@ -1,0 +1,32 @@
+/* .side {
+    background-image: url('../images/festivus-2.jpg');
+    background-repeat: repeat-y;
+} */
+
+/* img.pole {
+    /* background-image: url("../images/festivus-2.jpg"); */
+    /* background-repeat: repeat-y; */
+
+
+.main {
+    text-align: center;
+    font-weight: bold;
+    background-color: green;
+}
+
+/* html {
+    text-align: center;
+    font-weight: bold;
+    background-color: green;
+} */
+
+.container {
+    background-color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.side {
+    margin: none;
+    padding: 0px;
+}
