@@ -1,7 +1,6 @@
-var userGuess = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-var correctAnswers;
+var userGuess = [0, 0, 0, 0, 0];
 var correctGuesses = 0;
-var wrongGuess;
+var wrongGuess = 0;
 // var timer;
 // var minutes;
 // var seconds;
@@ -70,6 +69,8 @@ function checker() {
     console.log("incomplete");
   } else {
     console.log("incorrect");
+    wrongGuess++;
+  }
     if (userGuess[1] === "7") {
       console.log("correct");
       userGuess[1].push;
@@ -79,6 +80,7 @@ function checker() {
       console.log("incomplete");
     } else {
       console.log("incorrect");
+      wrongGuess++;
     }
     if (userGuess[2] === "12") {
       console.log("correct");
@@ -89,7 +91,29 @@ function checker() {
       console.log("incomplete");
     } else {
       console.log("incorrect");
-    }
+      wrongGuess++;
+  }
+    if (userGuess[3] === "13") {
+      console.log("correct");
+      userGuess[3].push;
+      console.log.userGuess;
+      correctGuesses++;
+    } else if (userGuess === "0") {
+      console.log("incomplete");
+    } else {
+      console.log("incorrect");
+      wrongGuess++;
+  }
+    if (userGuess[4] === "20") {
+      console.log("correct");
+      userGuess[4].push;
+      console.log.userGuess;
+      correctGuesses++;
+    } else if (userGuess === "0") {
+      console.log("incomplete");
+    } else {
+      console.log("incorrect");
+      wrongGuess++;
   }
 }
 // function myStopFunction() {
@@ -102,7 +126,10 @@ function checker() {
 // }
 
 function submit(){
-    $("#main").html("<div id = 'newdiv' class = 'jumbotron'>Submitted</div>");
-
+    $("#main").html("<div id = 'newdiv1' class = 'jumbotron'>Submitted</div>");
+    $('html,body').scrollTop(0);
     $('p').html("<p></p>");
+    var percentCorrect = correctGuesses / 5;
+    console.log(percentCorrect);
+    $('#main').append(`<div class = "score">${percentCorrect*100 }%</div>`);
 }
