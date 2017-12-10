@@ -131,5 +131,5 @@ function submit(){
     $('p').html("<p></p>");
     var percentCorrect = correctGuesses / 5;
     console.log(percentCorrect);
-    $('#main').append(`<div class = "score">${percentCorrect*100 }%</div>`);
+    $('#main').append(`<div class = "score">Your Score is:   ${percentCorrect*100 }%</div>`);
 }
