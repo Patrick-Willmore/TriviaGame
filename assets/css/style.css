@@ -35,3 +35,14 @@
 .kramer {
     padding-bottom: 10px;
 }
+
+.jumbotron {
+    background-color: green;
+    font-size: 150%;
+
+}
+
+#newdiv {
+    width:100%;
+    text-align: center;
+}
